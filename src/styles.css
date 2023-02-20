@@ -1,0 +1,186 @@
+/* body{
+    background-image: url(imgs/prison.jpg);
+    height:100%;
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+} */
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: Container;
+    animation-timing-function: linear;
+    animation-duration: 9s;
+    position: relative;
+    left: 20%;
+    padding: 200px;
+    
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    left: -7%;
+    top: -10%;
+    font-size:50px ;
+    color: yellowgreen;
+
+}
+.bus{
+    width: 550px;
+    height: 200px;
+    background-color:rgb(4, 4, 114);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    top: -18%;
+    left: -55%;
+}
+.bus-rear{
+    width: 250px;
+    height: 100px;
+    background-color: rgb(4, 4, 114);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    top: -12.5%;
+    left: -59%;
+    border-radius: 10%;
+
+    
+}
+
+.bus-windshield{
+    width: 48.5px;
+    height: 70px;
+    background-color: rgb(44, 41, 41);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    top: -24%;
+    left: -70.5%;
+
+}
+
+.bus-window{
+    width: 13.5px;
+    height: 52px;
+    background-color:rgb(201, 187, 187);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    top: -24%;
+    left: -80%;
+    z-index: 2;   
+}
+
+.bus-window1{
+    width: 13.5px;
+    height: 52px;
+    background-color:rgb(201, 187, 187);
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    top: -24%;
+    left: -95%;
+    z-index: 2;
+
+}
+
+.wheel{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 14px solid black; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    animation-name: Wheel;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    left: 1%;
+    top: -2%;
+    z-index: 1;
+}
+
+
+
+.wheel:nth-child(1){
+    position: absolute;
+    left:6%;
+    top: 43%;
+}
+.wheel:nth-child(2){
+    position: absolute;
+    left:-14%;
+    top: 43%;
+}
+
+.wheel:nth-child(3){
+position: absolute;
+    left:-6%;
+    top: 43%;
+}
+
+.center{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color:silver;
+    border-radius: 50%;
+    border-color:silver;
+    z-index: 2;
+}
+
+.line{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color:black;
+}
+
+.line:nth-child(2){
+    transform: rotate(45deg);
+}
+
+.line:nth-child(3){
+    transform: rotate(90deg);
+}
+
+.line:nth-child(4){
+    transform: rotate(140deg);
+}
+
+@keyframes Wheel {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes Container{
+    0%{
+         left: -150%;
+    }
+    100%{
+        left: 150%;
+    }
+}
+
+
